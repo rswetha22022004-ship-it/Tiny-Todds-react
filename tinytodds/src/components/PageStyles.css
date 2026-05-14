@@ -1,0 +1,259 @@
+/* Shared styles for inner pages */
+.page-main { min-height: 70vh; }
+
+.page-hero {
+  padding: 70px 0 60px;
+}
+.page-hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.page-hero-text { flex: 1; min-width: 280px; }
+.page-hero-emoji {
+  font-size: 120px;
+  line-height: 1;
+  animation: float 5s ease-in-out infinite;
+  user-select: none;
+}
+
+.content-section { padding: 72px 0; }
+.content-section.bg-light { background: var(--light-bg); }
+.content-section p { color: var(--text-light); line-height: 1.75; font-size: 15px; }
+.section-header { text-align: center; margin-bottom: 48px; }
+
+.two-col-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* About autism specifics */
+.info-card-stack { display: flex; flex-direction: column; gap: 20px; }
+.info-highlight-card {
+  background: var(--light-bg);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+}
+.info-big-num {
+  font-family: var(--font-heading);
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: var(--primary);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.info-highlight-card p { font-size: 14px; color: var(--text-light); margin: 0; }
+
+.signs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.sign-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: white;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--dark);
+}
+.sign-item svg { margin-top: 2px; font-size: 18px; }
+
+.causes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+}
+.cause-card {
+  background: white;
+  border-radius: var(--radius);
+  padding: 32px 24px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  transition: transform 0.3s;
+  border-top: 4px solid var(--primary);
+}
+.cause-card:hover { transform: translateY(-4px); }
+.cause-icon { font-size: 40px; margin-bottom: 16px; }
+.cause-card h3 { font-size: 18px; margin-bottom: 10px; color: var(--dark); }
+.cause-card p { font-size: 14px; color: var(--text-light); line-height: 1.7; margin: 0; }
+
+/* About Us specifics */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 28px;
+}
+.team-card {
+  background: white;
+  border-radius: var(--radius);
+  padding: 32px 20px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  transition: transform 0.3s;
+}
+.team-card:hover { transform: translateY(-4px); }
+.team-avatar {
+  font-size: 64px;
+  margin-bottom: 14px;
+  animation: float 4s ease-in-out infinite;
+}
+.team-card h3 { font-size: 17px; font-weight: 700; margin-bottom: 4px; }
+.team-card p { font-size: 13px; color: var(--primary); font-weight: 600; }
+
+/* Services specifics */
+.services-full-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 28px;
+}
+.service-full-card {
+  background: white;
+  border-radius: var(--radius);
+  padding: 36px 28px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  transition: all 0.3s;
+  border-bottom: 4px solid transparent;
+}
+.service-full-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+  border-bottom-color: var(--primary);
+}
+.service-full-icon { font-size: 48px; margin-bottom: 18px; }
+.service-full-card h3 { font-size: 20px; font-weight: 700; margin-bottom: 10px; }
+.service-full-card p { font-size: 14px; color: var(--text-light); line-height: 1.7; margin: 0; }
+
+/* Contact form */
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 50px;
+  align-items: start;
+}
+.contact-info-list { display: flex; flex-direction: column; gap: 24px; margin-top: 24px; }
+.contact-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+}
+.contact-info-icon {
+  width: 48px; height: 48px;
+  border-radius: 12px;
+  background: rgba(255,107,53,0.1);
+  color: var(--primary);
+  font-size: 20px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.contact-info-item h4 { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+.contact-info-item p, .contact-info-item a {
+  font-size: 14px; color: var(--text-light); line-height: 1.5; margin: 0;
+}
+.contact-info-item a:hover { color: var(--primary); }
+
+.contact-form {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.08);
+}
+.contact-form h3 {
+  font-size: 22px;
+  margin-bottom: 24px;
+  color: var(--dark);
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.form-group { margin-bottom: 18px; }
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--dark);
+  background: #fafafa;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: var(--primary);
+  background: white;
+  box-shadow: 0 0 0 4px rgba(255,107,53,0.1);
+}
+.form-group textarea { resize: vertical; min-height: 120px; }
+.form-success {
+  background: #edfff7;
+  border: 2px solid var(--green);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  color: #006644;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 16px;
+}
+
+.page-cta-band {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  padding: 60px 0;
+}
+
+/* Values/About */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+}
+.value-card {
+  background: white;
+  border-radius: var(--radius);
+  padding: 32px 24px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  transition: transform 0.3s;
+}
+.value-card:hover { transform: translateY(-4px); }
+.value-icon { font-size: 44px; margin-bottom: 14px; }
+.value-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+.value-card p { font-size: 14px; color: var(--text-light); line-height: 1.6; margin: 0; }
+
+@media (max-width: 768px) {
+  .two-col-grid { grid-template-columns: 1fr; }
+  .contact-layout { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+  .page-hero-emoji { display: none; }
+  .contact-form { padding: 24px; }
+}

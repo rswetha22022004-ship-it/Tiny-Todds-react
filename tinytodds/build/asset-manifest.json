@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.31cef8eb.css",
+    "main.js": "/static/js/main.b0e1906d.js",
+    "static/media/ourvision.jpg": "/static/media/ourvision.6dd3e42a24de99f9003d.jpg",
+    "static/media/ourmission.jpg": "/static/media/ourmission.e8485543df39cdc4cf04.jpg",
+    "static/media/Tiny-Todds-Therapy-Centre-.webp": "/static/media/Tiny-Todds-Therapy-Centre-.821444bb30e5d2711b3c.webp",
+    "index.html": "/index.html",
+    "main.31cef8eb.css.map": "/static/css/main.31cef8eb.css.map",
+    "main.b0e1906d.js.map": "/static/js/main.b0e1906d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31cef8eb.css",
+    "static/js/main.b0e1906d.js"
+  ]
+}
